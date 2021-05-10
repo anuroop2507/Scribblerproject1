@@ -2,135 +2,96 @@
 <html>
 
 <head>
-    <!-- Bootstrap CSS file -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-	<!-- Main CSS file -->
-	<link href='styles/index.css' rel='stylesheet' type='text/css'>
-	<!-- Common CSS file -->
-	<link href='styles/common.css' rel='stylesheet' type='text/css'>
     <!-- TODO: Include Font Awesome file here -->
-    <script src="https://use.fontawesome.com/12e84c3aa6.js"></script>
     <!-- TODO: Include Google Fonts file here -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/index.css">
+    
 </head>
-
 <body>
+    <header>
+        <a  class="logo-title">ScriBBler</a>
+        <span class="ashu">
+            <button id="myBtn">Sign Up</button>
+              <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                 <form>
+                  <h1>Get Started</h1>
+                  <hr>
+                  <label for="fname">Full Name:</label><br>
+                  <input class="k" type="text" id="fname" name="fname" placeholder="Enter Full Name" required><br><br>
 
-    <div id="main-container">
-        <!-- Code for Sign Up, Sign In button and for "ScriBBler" heading and the sub-heading -->
-        <div class="header">
-            <div class="title-container">
-                <p class="title">ScriBBler</p>
-                <p class="sub-title">Explore, Imagine, Create</p>
-            </div>
-            <div class="login-buttons-container">
-                <button id="signInBtn" class="topButtons" type="button">Sign In</button>
-                <button id="signUpBtn" class="topButtons" type="button">Sign Up</button>
-            </div>
-        </div>
+                  <label for="Username">Username:</label><br>
+                  <input type="text" class="k" id="Username" name="Username" placeholder="Enter Username"  required><br><br>
 
-        <div class="postButtonArea">
-            <!-- Code for All Posts & Create Post button here -->
-            <button onclick="location.href='./html/postslist.html'" class="postButtons" type="button">All Posts</button>
-            <button id="createPostBtn" class="postButtons" type="button">Create Post</button>
-        </div>
-    		<!-- Sign Up modal  -->
-            <div id="signUpModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close-icon" id="closeSignUp"><i class="fa fa-times fa-lg" aria-hidden="true"></i></span>
-                        <h3 class="modal-heading">Get Started</h3>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required="true" />
-                        </div>
-                        <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="Enter your username" required="true" />
-                        </div>
-                        <div class="form-group">
-                            <label for="pwd">Password</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="Enter your password" required="true" />
-                        </div>
-                        <div class="form-group">
-                            <label for="cnfpwd">Confirm Password</label>
-                            <input type="password" class="form-control" id="cnfpwd" placeholder="Re-enter your password" required="true" />
-                        </div>
-                        <button type="submit" class="btn btn-block btn-success">Sign Up</button>
-                        </form>
-                    </div>
+                  <label for="password">Password:</label><br>
+                  <input class="k" type="password" id="password" name="password" placeholder="Enter Password"  required><br><br>
+
+                  <label for="password1">Confirm Password:</label><br>
+                  <input class="k" type="password" id="password1" name="password1" placeholder="Confirm Password"  required><br><br>
+                  
+                  <input type="submit" class="value" value="Sign Up">
+                 </form> 
+              </div>
+              </div>
+
+              <button id="myBtn1">Sign In</button>
+              <div id="myModal1" class="modal1">
+                <div class="modal-content1">
+                  <span class="close">&times;</span>
+                  <form>
+                    <h1>Welcome Back!</h1>
+                    <hr>
+                    <label for="Username">Username:</label><br>
+                  <input type="text" class="k" id="Username" name="Username" placeholder="Enter Username"  required><br><br>
+  
+                    <label for="password">Password:</label><br>
+                    <input class="k" type="password" id="password" name="password" placeholder="Enter Password"  required><br><br>
+  
+                    <input type="submit" class="value" value="Sign In">
+                    <center><p style="display: inline;">Not a member ?<button id="myBtn13">Sign Up</button></p></center>
+                  </form>
+                   
                 </div>
-            </div>
-            <!-- The Sign In Modal -->
-            <div id="signInModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close-icon" id="closeSignIn"><i class="fa fa-times fa-lg" aria-hidden="true"></i></span>
-                        <h3 class="modal-heading">Welcome Back!</h3>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" id="username" placeholder="Enter your username" required="true" />
-                            </div>
-                            <div class="form-group">
-                                <label for="pwd">Password</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter your password" required="true" />
-                            </div>
-                            <button type="submit" class="btn btn-block btn-success">Sign In</button>
-                            <p class="not-member">Not a member? <span id="signUpLink">Sign Up</span></p>
-                        </form>
-                    </div>
+              </div>
+
+              
+              <div id="myModal2" class="modal2">
+                <div class="modal-content2">
+                  <span class="close">&times;</span>
+                    <form>
+                    <p>Pen Your Post</p>
+
+                     <label for="title">Title:</label><br>
+                     <input type="text" class="k" id="Username" name="title"   required><br><br>
+  
+                     <label for="textarea">Content:</label><br>
+                     <textarea id="w3review" class="k" id="textarea" name="w3review" rows="20" cols="130"></textarea><br>
+                    <input type="submit" class="value2" value="Submit">
+                  </form>
                 </div>
+              </div>
+
+            </span>
+            <p class="middleText">Explore, Imagine, Create</p>
+          </header>
+            <div class="vertical-center">
+              <button class="q"><a href="html/bloglist.html">All Posts</a></button>
+              &ensp;
+              <button class="q" id="myBtn2"> Create Posts</button>
             </div>
-            <!-- Create Post Modal -->
-            <div id="createPostModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span id="closeCreatePost" class="close-icon"><i class="fa fa-times fa-lg" aria-hidden="true"></i></span>
-                        <h3 class="modal-heading">Pen Your Post</h3>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="form-group">
-                                <label for="title">Title</label>
-                                <input type="text" class="form-control" id="title" placeholder="Enter title of your post" required="true" />
-                            </div>
-                            <div class="form-group">
-                                <label for="contents">Contents</label>
-                                <textarea type="text" class="form-control contents" id="contents" rows="10" placeholder="Enter the contents of your post" required="true" ></textarea>
-                            </div>
-                            <div class="create-btn-div">
-                                <button type="submit" class="btn btn-success" id="createPostApi">Create</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-    </div>
-
-
-            
-
-
-    <!-- Jquery Files-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Core JS file -->
-    <script src="scripts/common.js"></script>
-    <script src="scripts/index.js"></script>
+    
+    <!-- TODO: Include all your code for the header and home page here -->
 </body>
-
+<script src="js/index.js"></script>
 </html>
